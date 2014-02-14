@@ -1,0 +1,14 @@
+{
+	"name": "Three's A Crowd",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Who really want's that pesky first-party content?",
+	"permissions": [ "tabs", "http://*/*", "https://*/*" ],
+	"content_scripts": [
+		{
+			"matches": [ "http://*/*", "https://*/*" ],
+			"css": [],
+			"js": [ "jquery-1.11.0.min.js", "load.js" ]
+		}
+	]
+}
